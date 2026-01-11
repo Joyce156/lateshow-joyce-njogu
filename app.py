@@ -1,0 +1,8 @@
+from config import create_app, db
+from routes import register_routes
+
+app = create_app()
+register_routes(app)
+
+if __name__ == "__main__":
+    app.run(debug=True)
